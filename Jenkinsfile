@@ -10,7 +10,7 @@ pipeline {
             steps {
                 echo "Building.."                    
                 sh '''
-                python3 ops.py 
+                python3 building.py
                 '''
             }
         }
@@ -19,7 +19,7 @@ pipeline {
                 echo "Testing.."                    
                 sh '''
                 pipx install numpy
-                python3 test_ops.py 
+                python3 test_phase.py
                 '''
             }
         }
